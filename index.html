@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isobek Sharipov's portfolio - web development skills and projects.">
+  <title>Isobek Sharipov - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="home">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="brand"><strong>Isobek Sharipov</strong><span>Software Engineering Student</span></div>
+      <div class="nav-links">
+        <a href="#about-me">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#recommendations">Recommendations</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about-me" class="section about" aria-labelledby="about-title">
+      <div class="avatar" role="img" aria-label="Developer avatar">IS</div>
+      <div>
+        <p class="eyebrow">Hello, welcome to my portfolio!</p>
+        <h1 id="about-title">Hi, I'm Isobek Sharipov!</h1>
+        <p>I am a software engineering student passionate about Python, web development, and building helpful applications. I enjoy learning new technologies and turning ideas into working projects.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="cards skills-grid">
+        <article class="card skill"><div class="skill-icon">HTML5</div><h3>HTML</h3><p>Semantic page structure</p></article>
+        <article class="card skill"><div class="skill-icon">CSS3</div><h3>CSS</h3><p>Responsive layouts and styling</p></article>
+        <article class="card skill"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Interactive web interfaces</p></article>
+        <article class="card skill"><div class="skill-icon">PY</div><h3>Python</h3><p>Programming and automation</p></article>
+        <article class="card skill"><div class="skill-icon">DJ</div><h3>Django</h3><p>Backend web development</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="project-list">
+        <article class="project"><h3>Student Grade Prediction System</h3><p>A Django-based educational application designed to help explore student performance and predictions.</p></article>
+        <article class="project"><h3>EduLAB Learning Platform</h3><p>A web learning project with questions, answers, and educational content management.</p></article>
+        <article class="project"><h3>Telegram Movie Bot</h3><p>A Python Telegram bot project with movie listings and user features.</p></article>
+      </div>
+    </section>
+
+    <section id="recommendations" class="section" aria-labelledby="recommendations-title">
+      <h2 id="recommendations-title">Recommendations</h2>
+      <div id="recommendation-list" class="cards recommendation-grid" aria-live="polite">
+        <blockquote class="card quote">“Isobek approaches programming challenges with curiosity and persistence.”<footer>— Portfolio sample</footer></blockquote>
+        <blockquote class="card quote">“He enjoys collaborating, learning, and improving his software projects.”<footer>— Portfolio sample</footer></blockquote>
+        <blockquote class="card quote">“He values clear code and practical solutions.”<footer>— Portfolio sample</footer></blockquote>
+      </div>
+      <div class="form-wrap">
+        <h3>Leave a Recommendation</h3>
+        <form id="recommendation-form">
+          <label for="visitor-name">Name (optional)</label>
+          <input id="visitor-name" name="name" type="text" maxlength="60" placeholder="Your name">
+          <label for="visitor-message">Message</label>
+          <textarea id="visitor-message" name="message" rows="5" maxlength="500" required placeholder="Write your recommendation..."></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">© <span id="year">2026</span> Isobek Sharipov. Built with HTML, CSS and JavaScript.</footer>
+
+  <a class="home-button" href="#home" title="Back to Home" aria-label="Back to Home">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-7h6v7"/></svg>
+  </a>
+
+  <dialog id="thank-you-dialog" aria-labelledby="dialog-title">
+    <h3 id="dialog-title">Thank you!</h3>
+    <p>Thanks for leaving a recommendation.</p>
+    <button id="dialog-close" type="button">OK</button>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
