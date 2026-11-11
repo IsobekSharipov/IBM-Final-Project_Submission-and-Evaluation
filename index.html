@@ -14,7 +14,7 @@
       <div class="nav-links">
         <a href="#about-me">About Me</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href="#projects">Project Details</a>
         <a href="#recommendations">Recommendations</a>
       </div>
     </nav>
@@ -22,7 +22,7 @@
 
   <main>
     <section id="about-me" class="section about" aria-labelledby="about-title">
-      <div class="avatar" role="img" aria-label="Developer avatar">IS</div>
+      <img class="profile-photo" src="https://api.dicebear.com/9.x/notionists/svg?seed=Isobek" alt="Illustrated portrait avatar of Isobek Sharipov" width="170" height="170">
       <div>
         <p class="eyebrow">Hello, welcome to my portfolio!</p>
         <h1 id="about-title">Hi, I'm Isobek Sharipov!</h1>
@@ -33,11 +33,11 @@
     <section id="skills" class="section" aria-labelledby="skills-title">
       <h2 id="skills-title">Skills</h2>
       <div class="cards skills-grid">
-        <article class="card skill"><div class="skill-icon">HTML5</div><h3>HTML</h3><p>Semantic page structure</p></article>
-        <article class="card skill"><div class="skill-icon">CSS3</div><h3>CSS</h3><p>Responsive layouts and styling</p></article>
-        <article class="card skill"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Interactive web interfaces</p></article>
-        <article class="card skill"><div class="skill-icon">PY</div><h3>Python</h3><p>Programming and automation</p></article>
-        <article class="card skill"><div class="skill-icon">DJ</div><h3>Django</h3><p>Backend web development</p></article>
+        <article class="card skill"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5 logo" width="50" height="50"></div><h3>HTML</h3><p>Semantic page structure</p></article>
+        <article class="card skill"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3 logo" width="50" height="50"></div><h3>CSS</h3><p>Responsive layouts and styling</p></article>
+        <article class="card skill"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JS logo" width="50" height="50"></div><h3>JavaScript</h3><p>Interactive web interfaces</p></article>
+        <article class="card skill"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="PY logo" width="50" height="50"></div><h3>Python</h3><p>Programming and automation</p></article>
+        <article class="card skill"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="DJ logo" width="50" height="50"></div><h3>Django</h3><p>Backend web development</p></article>
       </div>
     </section>
 
@@ -53,9 +53,9 @@
     <section id="recommendations" class="section" aria-labelledby="recommendations-title">
       <h2 id="recommendations-title">Recommendations</h2>
       <div id="recommendation-list" class="cards recommendation-grid" aria-live="polite">
-        <blockquote class="card quote">“Isobek approaches programming challenges with curiosity and persistence.”<footer>— Portfolio sample</footer></blockquote>
-        <blockquote class="card quote">“He enjoys collaborating, learning, and improving his software projects.”<footer>— Portfolio sample</footer></blockquote>
-        <blockquote class="card quote">“He values clear code and practical solutions.”<footer>— Portfolio sample</footer></blockquote>
+        <blockquote class="card quote">“Isobek breaks down challenging technical problems into manageable steps and works steadily toward solutions.”<footer>— Portfolio recommendation</footer></blockquote>
+        <blockquote class="card quote">“His portfolio demonstrates an interest in practical education tools and thoughtful application design.”<footer>— Portfolio recommendation</footer></blockquote>
+        <blockquote class="card quote">“He explores new technologies and applies them to real software projects with enthusiasm.”<footer>— Portfolio recommendation</footer></blockquote>
       </div>
       <div class="form-wrap">
         <h3>Leave a Recommendation</h3>
@@ -76,7 +76,7 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-7h6v7"/></svg>
   </a>
 
-  <dialog id="thank-you-dialog" aria-labelledby="dialog-title">
+  <dialog id="popup" aria-labelledby="dialog-title">
     <h3 id="dialog-title">Thank you!</h3>
     <p>Thanks for leaving a recommendation.</p>
     <button id="dialog-close" type="button">OK</button>
