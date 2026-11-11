@@ -1,6 +1,11 @@
 const form = document.getElementById('recommendation-form');
 const recommendationList = document.getElementById('recommendation-list');
-const dialog = document.getElementById('thank-you-dialog');
+const dialog = document.getElementById('popup');
+
+function showPopup() {
+  if (typeof dialog.showModal === 'function') dialog.showModal();
+  else window.alert('Thank you for leaving a recommendation!');
+}
 const closeButton = document.getElementById('dialog-close');
 
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -22,8 +27,7 @@ form.addEventListener('submit', function (event) {
   recommendationList.appendChild(recommendation);
 
   form.reset();
-  if (typeof dialog.showModal === 'function') dialog.showModal();
-  else window.alert('Thank you for leaving a recommendation!');
+  showPopup();
 });
 
 closeButton.addEventListener('click', function () {
